@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Header from './components/Header';
 import MovieList from './components/MovieList';
-// import './styles.css';
+import './styles.css';
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+
   return (
     <div className="App">
-      <header>
-        <h1>Movie Website</h1>
-      </header>
+      <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <main>
-        <MovieList />
+        <MovieList searchTerm={searchTerm} />
       </main>
     </div>
   );
