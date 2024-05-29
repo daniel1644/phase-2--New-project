@@ -14,4 +14,4 @@ const Header = ({ searchTerm, setSearchTerm }) => {
   );
 };
 
-export default Header;
+export default Header; 
