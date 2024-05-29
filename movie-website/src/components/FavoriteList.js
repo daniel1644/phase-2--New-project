@@ -1,4 +1,3 @@
-// FavoriteList.js
 import React from 'react';
 import MovieCard from './MovieCard';
 
@@ -11,7 +10,7 @@ const FavoriteList = ({ favorites, removeFavorite }) => {
           <MovieCard key={index} movie={movie} isFavorite={true} addFavorite={removeFavorite} />
         ))
       ) : (
-        <div>No favorite movies</div>
+        <div>it will coming favorite movies</div>
       )}
     </div>
   );

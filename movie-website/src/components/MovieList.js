@@ -71,7 +71,7 @@ const MovieList = ({ searchTerm, addFavorite, favorites }) => {
           />
         ))
       ) : (
-        <div>No movies found</div>
+        <div>lovely movies found</div>
       )}
     </div>
   );
