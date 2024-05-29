@@ -52,6 +52,84 @@
       "description": "The Haunted Mansion is a family-friendly comedy film inspired by the Disney theme park attraction of the same name. The story follows a workaholic realtor named Jim Evers, who, along with his family, visits a mysterious mansion to assess its value. Upon arrival, they discover that the mansion is haunted by a cast of eccentric ghosts led by the ghostly master Gracey. As they uncover the secrets of the mansion's past, Jim and his family must work together to break a curse and help the ghosts find peace. Filled with humor, adventure, and spooky hijinks, The Haunted Mansion is a delightful romp that blends elements of comedy and supernatural mystery.",
       "genre": "horror"
     }]
-  ]
-
-  ]
+  ],
+  
+  "category 3" , [
+    {
+        "id": 7,
+        "name": "Turning Red ",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/p_turningred_22797_1_c17f32af.jpeg        "},
+        [{
+        "description": "Turning Red is a Pixar animated film that centers on Mei Lee, a 13-year-old Chinese-Canadian girl living in Toronto. Mei is an overachiever trying to navigate the challenges of adolescence, but her life takes a magical turn when she discovers that she turns into a giant red panda whenever she gets too excited or stressed. As Mei struggles to keep her newfound ability a secret, she learns valuable lessons about self-acceptance, friendship, and embracing her true identity. With its blend of heartwarming storytelling, vibrant animation, and cultural resonance, Turning Red is a delightful coming-of-age tale that celebrates the power of being true to oneself.",
+        "genre": "adventure"
+      }], 
+      {
+        "id": 8,
+        "name": "Light year",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/p_disney_lightyear_519_c4636841.jpeg        "},
+        [{
+        "description": "Lightyear is an upcoming Pixar animated film that serves as a prequel to the Toy Story franchise. The film explores the origin story of the beloved character Buzz Lightyear, the iconic space ranger action figure. Set in a futuristic world, Lightyear follows Buzz's journey from a young test pilot named Buzz Lightyear to the legendary hero who inspires the toy version seen in the Toy Story films. As Buzz embarks on an intergalactic adventure to defeat evil forces and protect the galaxy, he discovers the true meaning of heroism and bravery. With cutting-edge animation, thrilling action sequences, and a captivating story, Lightyear promises to be an exciting addition to the Pixar universe.",
+        "genre": "animation"
+      }],
+      {
+        "id": 9,
+        "name": "Encanto",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg        "},
+        [{
+        "description": "Encanto is a Disney animated film that tells the story of the Madrigal family, who live in a magical house in the mountains of Colombia. The family members each possess unique magical gifts, except for Mirabel, the protagonist. When the magic of the Encanto, the house's source of power, begins to fade, Mirabel embarks on a journey to uncover the truth behind the family's magic and save her home. Along the way, she learns the importance of self-discovery, acceptance, and the power of family bonds. Set against the backdrop of vibrant Colombian culture, Encanto is a heartwarming tale filled with colorful characters, catchy music, and enchanting visuals.",
+        "genre": "adventure"
+      }]
+    ]
+  
+     ,"category 4", [
+      {
+        "id": 10,
+        "name": "luca",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/p_luca_21670_3c13c611.jpeg        "},
+        [{
+        "description": "Luca is a Disney and Pixar animated film set in a picturesque seaside town on the Italian Riviera. The story follows the adventures of a young sea monster named Luca who experiences the human world for the first time during an unforgettable summer. Alongside his newfound friend Alberto, Luca discovers the joys of friendship, freedom, and self-discovery while hiding his true identity from the townspeople who fear and hunt sea monsters. As Luca and Alberto dream of exploring the world beyond the sea, they must navigate challenges and embrace their differences to pursue their dreams. Filled with heartwarming moments, stunning animation, and themes of acceptance and belonging, Luca is a charming coming-of-age tale that celebrates the transformative power of friendship and adventure.",
+        "genre": "animation"
+      }],
+      {
+        "id": 11,
+        "name": "Cruela",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/p_cruella_21672_ba40c762.jpeg        "},
+        [{
+        "description": "Cruella is a live-action film that delves into the origin story of the iconic Disney villain, Cruella de Vil. Set in 1970s London, the movie follows Estella, a young and ambitious fashion designer, as she embraces her darker alter ego and sets out on a path to become the notorious Cruella. With stylish visuals and a captivating performance by Emma Stone, Cruella offers a fresh and intriguing take on the beloved character's journey to infamy.",
+        "genre": "adventure"
+      }],
+      {
+        "id": 12,
+        "name": "Soul",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/p_soul_disneyplus_v2_20907_764da65d.jpeg        "},
+        [{
+        "description": "Soul is a Pixar animated film that follows the journey of Joe Gardner, a middle-school music teacher with a passion for jazz. After a near-death experience, Joe's soul embarks on a cosmic adventure in the Great Before, a realm where souls develop their personalities before being born. Alongside a precocious soul named 22, Joe learns profound truths about life, purpose, and the importance of embracing every moment. Filled with stunning animation, heartfelt storytelling, and a rich musical score, Soul is a soulful exploration of the human experience and the beauty of finding one's spark.",
+        "genre": "animation"
+      } ]]
+  
+      ,"category 5",[
+      {
+        "id": 13,
+        "name": "Mulan",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/p_mulan2020_19732_f8e02601.jpeg        "},
+        [{
+        "description": "Mulan is a Disney animated film that tells the tale of a young Chinese woman named Mulan who disguises herself as a man to take her father's place in the army. With the help of her dragon sidekick Mushu and a group of misfit friends, Mulan embarks on a journey to defeat the invading Huns and bring honor to her family. Along the way, she discovers her own inner strength and learns the true meaning of courage, loyalty, and selflessness. Filled with thrilling action, memorable characters, and empowering themes, Mulan is a timeless story of bravery and determination.",
+        "genre": "adventure"
+      }],
+      {
+        "id": 14,
+        "name": "Avatar",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_avatar_thewayofwater_poster_rebra_fa08636d.jpeg"},
+        [{
+        "description": "Avatar is a sci-fi epic set on the lush moon of Pandora. It follows Jake Sully, a paraplegic Marine, who becomes part of the Avatar Program, allowing him to inhabit a genetically engineered Na'vi body. As he immerses himself in Na'vi culture, Jake faces a moral dilemma between his loyalty to humanity and his newfound connection to the indigenous people. Avatar is celebrated for its stunning visuals and themes of environmentalism and cultural exploration.",
+        "genre": "adventure"
+      }],
+      {
+        "id": 15,
+        "name": "Black widow",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_21043_v2_6d1b73b8.jpeg        "},
+        [{
+        "description": "Black Widow is a Marvel film that delves into the backstory of Natasha Romanoff, aka Black Widow. It follows her reunion with her former family of Russian operatives as they confront their past and battle against the villainous Taskmaster and the Red Room organization. With action-packed scenes and themes of family and redemption, Black Widow provides insight into Natasha's character within the Marvel Universe.",
+        "genre":"adventure" 
+      }]
+  ]]
