@@ -11,7 +11,7 @@ const MovieList = () => {
   useEffect(() => {
     axios.get('https://api.myjson.online/v1/records/78a0a148-bbb0-4b2f-8038-e01c92b6a9d7')
       .then(response => {
-        setMovies(response.data.movies);
+        setMovies(response.data.movies || []); // Ensuring movies is an array
         setIsLoading(false);
       })
       .catch(error => {
@@ -29,20 +29,20 @@ const MovieList = () => {
     return <div>Error fetching data</div>;
   }
 
-  const filteredMovies = movies.filter(movie => 
+  const filteredMovies = movies.filter(movie =>
     movie.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div>
-      <input 
-        type="text" 
-        placeholder="Search for movies..." 
+      <input
+        type="text"
+        placeholder="Search for movies..."
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <div className="movie-list">
-        {filteredMovies.map(movie => (
-          <MovieCard key={movie.id} movie={movie} />
+        {filteredMovies.map((movie, index) => (
+          <MovieCard key={index} movie={movie} />
         ))}
       </div>
     </div>
