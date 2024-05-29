@@ -1,0 +1,57 @@
+[
+    "category 1" ,[
+    {
+      "id": 1,
+      "name": "inside out ",
+      "image": "https://lumiere-a.akamaihd.net/v1/images/p_insideout2_798_9b5e9941.jpeg"},
+      [
+        {
+      "description": "Inside Out is a Pixar film that delves into the inner workings of 11-year-old Riley's mind, where her emotions—Joy, Sadness, Anger, Fear, and Disgust—navigate her life changes. When Joy and Sadness are lost, Riley's emotional landscape becomes chaotic. Through their adventure, the film explores the importance of embracing all emotions for emotional well-being. ",
+      "genre":"animation"
+    }],
+    {
+      "id": 2,
+      "name": "Moana 2",
+      "image": "https://lumiere-a.akamaihd.net/v1/images/p_moana2_3113-1_c5c9e64b.jpeg"},
+      [{
+      "description": "Moana is a Disney animated film that follows the journey of a spirited young Polynesian girl named Moana. Determined to save her island people, Moana embarks on a daring oceanic adventure to find the demigod Maui and restore the heart of Te Fiti, a goddess whose life force sustains their world. Along the way, Moana discovers her own identity, courage, and connection to her ancestors, ultimately becoming the hero her people need. With its stunning visuals, memorable music, and themes of bravery and self-discovery, Moana is a heartwarming tale of empowerment and cultural pride.",
+      "genre": "adventure"
+    }],
+    {
+      "id": 3,
+      "name": "Wish",
+      "image": "https://lumiere-a.akamaihd.net/v1/images/p_disney_wish_2993_f80fee96.jpeg"},
+      [{
+      "description": "Wish is a Pixar animated short film that tells the story of a wish-granting rock found by a young girl named Olive. With the ability to fulfill any wish, Olive's discovery brings joy and excitement to her rural community. However, as more people flock to make wishes, Olive realizes that the rock's power comes with unintended consequences. Through Olive's journey, Wish explores themes of community, responsibility, and the true nature of fulfillment.",
+      "genre": "animation"
+    }]
+  ],
+  
+  
+   "category 2" ,[
+    {
+      "id": 4,
+      "name": "Elemental",
+      "image": "https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_elemental_poster_rebrand_a0788af2.jpeg"},
+      [{
+      "description": "Elemental is a fantasy adventure film set in a world where humans possess the ability to control the elements: earth, air, fire, and water. The story follows a group of young elementalists who embark on a perilous quest to save their kingdom from an ancient evil that threatens to engulf the land in darkness. As they harness their unique elemental powers and overcome formidable challenges, the group learns the importance of teamwork, courage, and sacrifice in the face of adversity. Elemental is a captivating tale of magic, friendship, and the enduring struggle between light and darkness.",
+      "genre": "animation"
+    }],
+    {
+      "id": 5,
+      "name": "Elio",
+      "image": "https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_elio_poster_v3_797_92cd89e2.jpeg"},
+      [{
+      "description":  "Elio isn't a Disney movie, but if you're referring to The Lion King, the main character, Simba's father, is named Mufasa. Mufasa serves as the wise and noble king of the Pride Lands until his untimely death caused by his brother Scar's machinations. His legacy lives on through Simba, who learns important life lessons from his father's guidance, even after Mufasa's passing. Mufasa's character embodies strength, wisdom, and the importance of embracing one's responsibilities.",
+      "genre": "animation"
+    }],
+    {
+      "id": 6,
+      "name": "Haunted Mansion",
+      "image": "https://lumiere-a.akamaihd.net/v1/images/p_disneymovies_hauntedmansion_poster_rebrand_e6c61d0d.jpeg      "},[{
+      "description": "The Haunted Mansion is a family-friendly comedy film inspired by the Disney theme park attraction of the same name. The story follows a workaholic realtor named Jim Evers, who, along with his family, visits a mysterious mansion to assess its value. Upon arrival, they discover that the mansion is haunted by a cast of eccentric ghosts led by the ghostly master Gracey. As they uncover the secrets of the mansion's past, Jim and his family must work together to break a curse and help the ghosts find peace. Filled with humor, adventure, and spooky hijinks, The Haunted Mansion is a delightful romp that blends elements of comedy and supernatural mystery.",
+      "genre": "horror"
+    }]
+  ]
+
+  ]
