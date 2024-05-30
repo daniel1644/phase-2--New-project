@@ -3,8 +3,9 @@ import React from 'react';
 const MovieCard = ({ movie, isFavorite, addFavorite }) => {
   return (
     <div className="movie-card">
-      <img src={movie.image} alt={`${movie.name} poster`} />
-      <h2>{movie.name}</h2>
+      <img src={movie.image} alt={`${movie.title} poster`} />
+      <h2>{movie.title}</h2>
+      <p>Year: {movie.year}</p>
       <p>Genre: {movie.genre}</p>
       <button onClick={() => addFavorite(movie)}>
         {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
@@ -14,4 +15,3 @@ const MovieCard = ({ movie, isFavorite, addFavorite }) => {
 };
 
 export default MovieCard;
-
