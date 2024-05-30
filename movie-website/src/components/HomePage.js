@@ -35,9 +35,8 @@ const HomePage = ({ searchTerm, setSearchTerm, addFavorite, favorites }) => {
 
   return (
     <div className="home-page">
-       <a class="navbar-brand" href="#">Navbar GROUP:- DANIEL: ELIUD: BRIAN</a>
+       <a className="navbar-brand" href="#">Navbar GROUP:- DANIEL: ELIUD: BRIAN!</a>
       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      
       <MovieList searchTerm={searchTerm} addFavorite={addFavorite} favorites={favorites} movies={movies} />
     </div>
   );

@@ -27,7 +27,7 @@ function App() {
       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <main>
         <AddMovieForm onAddMovie={addMovie} />
-        {/* Render the HomePage component */}
+        {/* the component */}
         <MoviesPage searchTerm={searchTerm} addFavorite={addFavorite} favorites={favorites} movies={movies} />
         <FavoriteList favorites={favorites} removeFavorite={removeFavorite} />
       </main>
