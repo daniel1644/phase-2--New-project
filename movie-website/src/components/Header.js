@@ -3,7 +3,7 @@ import React from 'react';
 const Header = ({ searchTerm, setSearchTerm }) => {
   return (
     <header>
-      <h1>Movie Website</h1>
+      <h1>MOST POPULAR MOVIES</h1>
       <input
         type="text"
         placeholder="Search for movies..."

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import MovieList from './components/MovieList';
 import FavoriteList from './components/FavoriteList';
 import AddMovieForm from './components/AddMovieForm';
+import MoviesPage from './components/HomePage'; 
 import './styles.css';
 
 function App() {
@@ -27,7 +27,8 @@ function App() {
       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <main>
         <AddMovieForm onAddMovie={addMovie} />
-        <MovieList searchTerm={searchTerm} addFavorite={addFavorite} favorites={favorites} movies={movies} />
+        {/* Render the HomePage component */}
+        <MoviesPage searchTerm={searchTerm} addFavorite={addFavorite} favorites={favorites} movies={movies} />
         <FavoriteList favorites={favorites} removeFavorite={removeFavorite} />
       </main>
     </div>
