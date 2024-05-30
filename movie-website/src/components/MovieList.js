@@ -1,4 +1,3 @@
-// MovieList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MovieCard from './MovieCard';
@@ -8,16 +7,38 @@ const MovieList = ({ searchTerm, addFavorite, favorites }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const processMovieData = (data) => {
+    const movies = [];
+    data.forEach((categoryItem, index) => {
+      if (index % 2 === 0) return;
+
+      categoryItem.forEach((item) => {
+        if (item.id && item.name && item.image) {
+          const movieDetails = categoryItem.find(subItem => Array.isArray(subItem) && subItem.some(subSubItem => subSubItem.genre && subSubItem.description));
+          if (movieDetails) {
+            movies.push({
+              ...item,
+              genre: movieDetails[0].genre,
+              description: movieDetails[0].description
+            });
+          }
+        }
+      });
+    });
+    return movies;
+  };
+
   useEffect(() => {
     const fetchMovies = async () => {
       setIsLoading(true);
       try {
         const response = await axios.get('https://api.myjson.online/v1/records/78a0a148-bbb0-4b2f-8038-e01c92b6a9d7');
-        setMovies(response.data.movies || []);
-        setIsLoading(false);
+        const processedMovies = processMovieData(response.data.data);
+        setMovies(processedMovies);
       } catch (error) {
         console.error('Error fetching data:', error);
         setError(error);
+      } finally {
         setIsLoading(false);
       }
     };
@@ -26,26 +47,29 @@ const MovieList = ({ searchTerm, addFavorite, favorites }) => {
   }, []);
 
   useEffect(() => {
+    if (!searchTerm) {
+      return;
+    }
+
     const fetchMoviesBySearchTerm = async () => {
       setIsLoading(true);
       try {
         const response = await axios.get('https://api.myjson.online/v1/records/78a0a148-bbb0-4b2f-8038-e01c92b6a9d7');
-        const filteredMovies = response.data.movies.filter(movie =>
-          movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+        const processedMovies = processMovieData(response.data.data);
+        const filteredMovies = processedMovies.filter(movie =>
+          movie.name.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setMovies(filteredMovies);
-        setIsLoading(false);
       } catch (error) {
         console.error('Error fetching data:', error);
         setError(error);
+      } finally {
         setIsLoading(false);
       }
     };
 
     const debounceFetch = setTimeout(() => {
-      if (searchTerm) {
-        fetchMoviesBySearchTerm();
-      }
+      fetchMoviesBySearchTerm();
     }, 300);
 
     return () => clearTimeout(debounceFetch);
@@ -71,7 +95,7 @@ const MovieList = ({ searchTerm, addFavorite, favorites }) => {
           />
         ))
       ) : (
-        <div>lovely movies found</div>
+        <div>No movies found</div>
       )}
     </div>
   );
