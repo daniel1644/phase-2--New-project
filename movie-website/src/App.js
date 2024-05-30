@@ -1,13 +1,14 @@
-
 import React, { useState } from 'react';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import FavoriteList from './components/FavoriteList';
+import AddMovieForm from './components/AddMovieForm';
 import './styles.css';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [favorites, setFavorites] = useState([]);
+  const [movies, setMovies] = useState([]);
 
   const addFavorite = (movie) => {
     setFavorites([...favorites, movie]);
@@ -17,11 +18,16 @@ function App() {
     setFavorites(favorites.filter(fav => fav.id !== movie.id));
   };
 
+  const addMovie = (movie) => {
+    setMovies([...movies, movie]);
+  };
+
   return (
     <div className="App">
       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <main>
-        <MovieList searchTerm={searchTerm} addFavorite={addFavorite} favorites={favorites} />
+        <AddMovieForm onAddMovie={addMovie} />
+        <MovieList searchTerm={searchTerm} addFavorite={addFavorite} favorites={favorites} movies={movies} />
         <FavoriteList favorites={favorites} removeFavorite={removeFavorite} />
       </main>
     </div>

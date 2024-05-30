@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import MovieCard from './MovieCard';
+import MovieCard from './MovieCard'; 
 
 const MovieList = ({ searchTerm, addFavorite, favorites }) => {
   const [movies, setMovies] = useState([]);
