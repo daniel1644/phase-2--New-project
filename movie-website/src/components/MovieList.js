@@ -32,8 +32,9 @@ const MovieList = ({ searchTerm, addFavorite, favorites }) => {
     const fetchMovies = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get('https://api.myjson.online/v1/records/78a0a148-bbb0-4b2f-8038-e01c92b6a9d7');
+        const response = await axios.get('https://api.myjson.online/v1/records/9311718e-6130-416f-a235-f884b270f99d');
         const processedMovies = processMovieData(response.data.data);
+        console.log(response.data.data)
         setMovies(processedMovies);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -54,7 +55,7 @@ const MovieList = ({ searchTerm, addFavorite, favorites }) => {
     const fetchMoviesBySearchTerm = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get('https://api.myjson.online/v1/records/78a0a148-bbb0-4b2f-8038-e01c92b6a9d7');
+        const response = await axios.get('https://api.myjson.online/v1/records/9311718e-6130-416f-a235-f884b270f99d');
         const processedMovies = processMovieData(response.data.data);
         const filteredMovies = processedMovies.filter(movie =>
           movie.name.toLowerCase().includes(searchTerm.toLowerCase())
